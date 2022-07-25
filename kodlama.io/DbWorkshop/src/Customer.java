@@ -4,8 +4,6 @@ public class Customer {
     int id;
     private String customerNumber;
     private Canal canal;
-
-
     public Customer() {
     }
 
