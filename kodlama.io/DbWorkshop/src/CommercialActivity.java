@@ -4,7 +4,7 @@ public class CommercialActivity {
     private int id;
     private IndividualCustomer individualCustomer;
     private LocalDate startedDate;
-
+    //private List<Balance> balances
     public CommercialActivity() {
     }
 
