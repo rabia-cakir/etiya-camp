@@ -25,7 +25,7 @@ public class CourseManager implements ICourseService {
     public List<Course> getAll() {
         List<Course> courses=iCourseDal.getAll();
         iCampaignService.updatePrice(courses);
-        return iCourseDal.getAll();
+        return courses;
     }
 
 

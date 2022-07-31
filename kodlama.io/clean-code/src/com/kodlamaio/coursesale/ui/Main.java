@@ -2,6 +2,7 @@ package com.kodlamaio.coursesale.ui;
 
 import com.kodlamaio.coursesale.business.abstacts.ICourseService;
 import com.kodlamaio.coursesale.business.concretes.CourseManager;
+import com.kodlamaio.coursesale.business.concretes.PercentDiscountCampaignManager;
 import com.kodlamaio.coursesale.business.concretes.StandardPriceCampaignManager;
 import com.kodlamaio.coursesale.dataaccess.concretes.EfCourseDal;
 import com.kodlamaio.coursesale.entity.concretes.Course;
@@ -12,7 +13,7 @@ public class Main {
         Course course2=new Course(2,"java kursu",50.0);
         Course course3=new Course(3,"python kursu",50.0);
 
-        ICourseService iCourseService=new CourseManager(new EfCourseDal(),new StandardPriceCampaignManager());
+        ICourseService iCourseService=new CourseManager(new EfCourseDal(),new PercentDiscountCampaignManager());
         iCourseService.add(course1);
         iCourseService.add(course2);
         iCourseService.add(course3);
